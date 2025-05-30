@@ -19,6 +19,26 @@ An intelligent IoT-based car parking system that displays real-time availability
 - **Backend/Database**: Firebase / MySQL
 - **Communication**: UART / HTTP
 
+## ⚙️ How the System Works
+
+1. 🚗 **Entry Process**:
+   - When a vehicle approaches the gate, **IR Sensor 1** detects it.
+   - The **LCD display** prompts: `Please scan your RFID card`.
+   - If the **RFID card is registered**, the **servo motor** opens the gate.
+   - If the card is **not registered**, the LCD shows **"Access Denied"** and the gate stays closed.
+   - After the vehicle passes **IR Sensor 2**, the gate **automatically closes after 2 seconds**.
+
+2. 🅿️ **Parking Management**:
+   - The system manages **4 parking slots**.
+   - The number of slots can be **increased via software** changes.
+
+3. 🚙 **Exit Process**:
+   - At the exit, when a vehicle triggers **IR Sensor 2**, the **servo** opens the gate.
+   - After passing **IR Sensor 1**, the gate closes **after 2 seconds**.
+
+4. 🔋 **Power Stability**:
+   - A **capacitor** helps maintain power stability during sensor and servo operations.
+
 ## 📈 Impact
 
 - 📶 Improved user convenience and operational efficiency by **30%**
