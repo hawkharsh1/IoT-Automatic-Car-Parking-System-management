@@ -14,7 +14,7 @@ An intelligent IoT-based car parking system that displays real-time availability
 ## 🛠️ Tech Stack
 
 - **Microcontrollers**: ESP32 / Arduino
-- **Sensors**: Ultrasonic Sensors, RFID Modules
+- **Sensors**: Infrared Sensors, RFID Modules
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend/Database**: Firebase / MySQL
 - **Communication**: UART / HTTP
